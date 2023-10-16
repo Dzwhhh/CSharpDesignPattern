@@ -2,7 +2,7 @@ using System;
 
 namespace DesignPattern.Patterns.CreationalPatterns;
 
-public class Singleton
+public sealed class Singleton
 {
     private static Singleton? _singleton;
     private static int initCount = 0;

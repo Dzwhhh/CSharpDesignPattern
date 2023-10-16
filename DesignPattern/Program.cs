@@ -25,3 +25,10 @@ singleton.Execute();
 
 
 /*结构型模式示例*/
+Console.WriteLine("适配器模式");
+AdapterClient adapterClient = new AdapterClient();
+adapterClient.Execute();
+
+Console.WriteLine("代理模式");
+Proxy proxy = new Proxy();
+proxy.Execute();

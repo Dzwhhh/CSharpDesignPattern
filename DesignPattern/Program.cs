@@ -36,3 +36,7 @@ proxy.Execute();
 Console.WriteLine("装饰器模式");
 DecoratorClient decoratorClient = new DecoratorClient();
 decoratorClient.Execute();
+
+Console.WriteLine("桥接模式");
+Bridge bridge = new Bridge();
+bridge.Execute();

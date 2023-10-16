@@ -1,4 +1,6 @@
-﻿using DesignPattern.Client;
+﻿using System;
+
+using DesignPattern.Client;
 
 /*创建者模式示例:*/
 Console.WriteLine("工厂方法模式");

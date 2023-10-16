@@ -20,8 +20,8 @@ ProtoType protoType = new ProtoType();
 protoType.Execute();
 
 Console.WriteLine("单例模式");
-SingletonClient singleton = new SingletonClient();
-singleton.Execute();
+SingletonClient singletonClient = new SingletonClient();
+singletonClient.Execute();
 
 
 /*结构型模式示例*/
@@ -32,3 +32,7 @@ adapterClient.Execute();
 Console.WriteLine("代理模式");
 Proxy proxy = new Proxy();
 proxy.Execute();
+
+Console.WriteLine("装饰器模式");
+DecoratorClient decoratorClient = new DecoratorClient();
+decoratorClient.Execute();

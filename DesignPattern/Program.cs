@@ -40,3 +40,11 @@ decoratorClient.Execute();
 Console.WriteLine("桥接模式");
 Bridge bridge = new Bridge();
 bridge.Execute();
+
+Console.WriteLine("外观模式");
+FacadeClient facadeClient = new FacadeClient();
+facadeClient.Execute();
+
+Console.WriteLine("享元模式");
+FlyweightClient flyweightClient = new FlyweightClient();
+flyweightClient.Execute();

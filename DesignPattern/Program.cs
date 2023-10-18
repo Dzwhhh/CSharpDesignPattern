@@ -48,3 +48,13 @@ facadeClient.Execute();
 Console.WriteLine("享元模式");
 FlyweightClient flyweightClient = new FlyweightClient();
 flyweightClient.Execute();
+
+
+/*行为型模式示例*/
+Console.WriteLine("责任链模式");
+ChainOfResponsibility chain = new ChainOfResponsibility();
+chain.Execute();
+
+Console.WriteLine("命令模式");
+CommandClient commandClient = new CommandClient();
+commandClient.Execute();

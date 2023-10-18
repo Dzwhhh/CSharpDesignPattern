@@ -4,6 +4,14 @@ using Newtonsoft.Json;
 
 namespace DesignPattern.Patterns.StructuralPatterns;
 
+/*
+ 程序需要创建非常多重复的对象（粒子系统），对内存有很大的消耗。
+ 这些重复对象可以抽离出不会变化的部分（内在状态）和会变化的部分（外在状态），
+ 那对于N个对象，可能内在状态只有常量C个（C << N），
+ 这C个内在状态就能够作为享元，仅被享元工厂初始化一次，作为列表/字典缓存在享元工厂。
+ 这些享元存在公共方法，接受外在状态作为参数，去实现不同的外在状态的行为。
+ */
+
 // 重点关注 形参 uniqueState, sharedState
 public class Car
 {

@@ -41,6 +41,10 @@ Console.WriteLine("桥接模式");
 Bridge bridge = new Bridge();
 bridge.Execute();
 
+Console.WriteLine("组合模式");
+Composite composite = new Composite();
+composite.Execute();
+
 Console.WriteLine("外观模式");
 FacadeClient facadeClient = new FacadeClient();
 facadeClient.Execute();
@@ -58,3 +62,4 @@ chain.Execute();
 Console.WriteLine("命令模式");
 CommandClient commandClient = new CommandClient();
 commandClient.Execute();
+

@@ -1,6 +1,4 @@
-﻿using System;
-
-using DesignPattern.Client;
+﻿using DesignPattern.Client;
 
 /*创建者模式示例:*/
 Console.WriteLine("工厂方法模式");
@@ -63,3 +61,26 @@ Console.WriteLine("命令模式");
 CommandClient commandClient = new CommandClient();
 commandClient.Execute();
 
+Console.WriteLine("迭代器模式");
+IteratorClient iteratorClient = new IteratorClient();
+iteratorClient.Execute();
+
+Console.WriteLine("中介者模式");
+MediatorClient mediatorClient = new MediatorClient();
+mediatorClient.Execute();
+
+Console.WriteLine("备忘录模式");
+Memento memento = new Memento();
+memento.Execute();
+
+Console.WriteLine("观察者模式");
+ObserverClient observerClient = new ObserverClient();
+observerClient.Execute();
+
+Console.WriteLine("状态模式");
+StateClient stateClient = new StateClient();
+stateClient.Execute();
+
+Console.WriteLine("策略模式");
+Strategy strategy = new Strategy();
+strategy.Execute();

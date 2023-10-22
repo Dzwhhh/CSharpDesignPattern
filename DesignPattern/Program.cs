@@ -84,3 +84,11 @@ stateClient.Execute();
 Console.WriteLine("策略模式");
 Strategy strategy = new Strategy();
 strategy.Execute();
+
+Console.WriteLine("模板方法");
+Template template = new Template();
+template.Execute();
+
+Console.WriteLine("访问者模式");
+VisitorClient visitorClient = new VisitorClient();
+visitorClient.Execute();
